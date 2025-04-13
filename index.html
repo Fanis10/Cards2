@@ -25,8 +25,8 @@
                     <li><a href="#tariffs">Тарифы</a></li>
                 </ul>
                 <div class="header__btns">
-                    <button class="header__btn btn btn-blue__outline">
-                        <span>Отправить заявку </span>
+                    <button class="header__btn btn btn-blue__outline" data-modal="contactModal">
+                        <span>Отправить заявку</span>
                     </button>
                 </div>
             </div>
@@ -83,7 +83,7 @@
 									</div>
 								</div>
 							</nav>
-							<button class="main__btn btn btn-blue">
+							<button class="main__btn btn btn-blue" data-modal="contactModal">
 								<span>Записаться на аудит</span>
 							</button>
 						</div>
@@ -92,7 +92,7 @@
 							<span class="circle"></span>
 							<span class="circle2"></span>
 						</div>
-						<button class="main__btn main__btn--mob btn btn-blue">
+						<button class="main__btn main__btn--mob btn btn-blue" data-modal="contactModal">
 							<span>Записаться на аудит</span>
 						</button>
 					</div>
@@ -352,7 +352,7 @@
 								</div>
 							</div>
 						</div>
-						<button class="stages__btn btn btn-blue">
+						<button class="stages__btn btn btn-blue" data-modal="contactModal">
 							<span>Отправить заявку</span>
 						</button>
 					</div>
@@ -992,7 +992,7 @@
                         <li><a href="tel:79999999999">+7 999 999 99 99</a></li>
                         <li>Москва, ул. Фёдора Полетаева, 4</li>
                     </ul>
-                    <button class="footer__btn btn">
+                    <button class="footer__btn btn" data-modal="contactModal">
                         <span>Отправить заявку </span>
                     </button>
                 </div>
@@ -1017,6 +1017,65 @@
 
 
 	</div>
+
+	<div class="modal modal-form" id="contactModal">
+		<div class="modal__dialog">
+			<button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+				<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5001 11.8853L18.0428 19.428C18.2942 19.6709 18.631 19.8053 18.9806 19.8022C19.3302 19.7992 19.6646 19.659 19.9118 19.4118C20.1591 19.1646 20.2993 18.8301 20.3023 18.4805C20.3054 18.1309 20.171 17.7941 19.9281 17.5427L12.3854 10L19.9281 2.45734C20.171 2.20587 20.3054 1.86907 20.3023 1.51947C20.2993 1.16988 20.1591 0.835459 19.9118 0.588248C19.6646 0.341037 19.3302 0.200812 18.9806 0.197774C18.631 0.194736 18.2942 0.329128 18.0428 0.572006L10.5001 8.11467L2.95742 0.572006C2.70482 0.335132 2.36997 0.205826 2.02373 0.211449C1.67749 0.217071 1.34701 0.357181 1.10224 0.602131C0.857459 0.847081 0.717583 1.17765 0.712205 1.5239C0.706828 1.87015 0.836371 2.20491 1.07342 2.45734L8.61476 10L1.07209 17.5427C0.944743 17.6657 0.843167 17.8128 0.773288 17.9755C0.70341 18.1381 0.666628 18.3131 0.665089 18.4901C0.663551 18.6672 0.697286 18.8428 0.764327 19.0066C0.831369 19.1705 0.930373 19.3193 1.05556 19.4445C1.18075 19.5697 1.32962 19.6687 1.49348 19.7358C1.65735 19.8028 1.83292 19.8365 2.00996 19.835C2.187 19.8335 2.36196 19.7967 2.52463 19.7268C2.6873 19.6569 2.83443 19.5554 2.95742 19.428L10.5001 11.8853Z" fill="#555B71"/>
+				</svg>
+			</button>
+			<div class="modal__content">
+				<h3 class="modal__title h3">Заказать <br> транзакционный анализ</h3>
+				<form class="form">
+					<div class="form-group">
+						<input type="text" placeholder="Фио">
+					</div>
+					<div class="form-group">
+						<input type="tel" placeholder="Телефон">
+					</div>
+					<div class="form-group">
+						<input type="email" placeholder="Почта">
+					</div>
+					<div class="form-flex">
+						<div class="file">
+							<input type="file">
+							<label class="btn btn-blue__outline">
+								<span class="file-icon">
+										<img src="img/file-icon.svg" alt="">
+								</span>
+								<span class="file-text">Прикрепить файл</span>
+							</label>
+						</div>
+						<button class="form-btn btn btn-blue">
+							<span>Отправить заявку </span>
+						</button>
+					</div>
+					<div class="form-check">Нажимая на кнопку согласен с <a href="">политикой конфиденциальности</a></div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal-form modal-form2" id="contactModal2">
+		<div class="modal__dialog">
+			<button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+				<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5001 11.8853L18.0428 19.428C18.2942 19.6709 18.631 19.8053 18.9806 19.8022C19.3302 19.7992 19.6646 19.659 19.9118 19.4118C20.1591 19.1646 20.2993 18.8301 20.3023 18.4805C20.3054 18.1309 20.171 17.7941 19.9281 17.5427L12.3854 10L19.9281 2.45734C20.171 2.20587 20.3054 1.86907 20.3023 1.51947C20.2993 1.16988 20.1591 0.835459 19.9118 0.588248C19.6646 0.341037 19.3302 0.200812 18.9806 0.197774C18.631 0.194736 18.2942 0.329128 18.0428 0.572006L10.5001 8.11467L2.95742 0.572006C2.70482 0.335132 2.36997 0.205826 2.02373 0.211449C1.67749 0.217071 1.34701 0.357181 1.10224 0.602131C0.857459 0.847081 0.717583 1.17765 0.712205 1.5239C0.706828 1.87015 0.836371 2.20491 1.07342 2.45734L8.61476 10L1.07209 17.5427C0.944743 17.6657 0.843167 17.8128 0.773288 17.9755C0.70341 18.1381 0.666628 18.3131 0.665089 18.4901C0.663551 18.6672 0.697286 18.8428 0.764327 19.0066C0.831369 19.1705 0.930373 19.3193 1.05556 19.4445C1.18075 19.5697 1.32962 19.6687 1.49348 19.7358C1.65735 19.8028 1.83292 19.8365 2.00996 19.835C2.187 19.8335 2.36196 19.7967 2.52463 19.7268C2.6873 19.6569 2.83443 19.5554 2.95742 19.428L10.5001 11.8853Z" fill="#555B71"/>
+				</svg>
+			</button>
+			<div class="modal__content">
+				<div class="modal__icon">
+					<img src="img/modal-icon.webp" alt="">
+				</div>
+				<h3 class="modal__title h3">Заявка успешно отправлена</h3>
+				<div class="modal__info">Наши специалисты скоро с вами свяжутся</div>
+				<button class="modal__close2 _close-modal btn btn-blue__outline">
+					<span>Закрыть</span>
+				</button>
+			</div>
+		</div>
+	</div>
+
 	<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 
